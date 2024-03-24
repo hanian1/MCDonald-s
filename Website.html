@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout McDonalds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .navbar {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #fff;
+            background-color: #f00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item-content {
+            padding: 1rem;
+        }
+
+        .menu-item h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item .btn {
+            background-color: #f90;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .store-icons a {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .store-icons img {
+            width: 120px;
+            height: auto;
+        }
+
+        .footer-links {
+            list-style: none;
+            margin-top: 1rem;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .footer-links li a {
+            color: #333;
+            text-decoration: none;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">Menu</a>
+            <a href="#">Promo</a>
+            <a href="#">MyMcDonalds Rewards</a>
+            <a href="#">Dunia Anak</a>
+            <a href="#">Berita Terkini</a>
+            <a href="#">Pahlawan di Sekitar Kita</a>
+            <a href="#">Makin Kenal Makin sayang</a>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <h1>Discover Deliciousness</h1>
+                <a href="#" class="btn">Lihat Menu</a>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="" alt="Menu Item 1">
+                <div class="menu-item-content">
+                    <h2>Big Mac</h2>
+                    <a href="#" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="" alt="Menu Item 2">
+                <div class="menu-item-content">
+                    <h2>PaNas 1</h2>
+                    <a href="#" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="" alt="Menu Item 3">
+                <div class="menu-item-content">
+                    <h2>PaNas Special</h2>
+                    <a href="#" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="" alt="Menu Item 4">
+                <div class="menu-item-content">
+                    <h2>McChicken</h2>
+                    <a href="#" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><img src="./logo/facebook-app-symbol.png" alt="Facebook"></a>
+                <a href="#"><img src="./logo/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./logo/telegram.png" alt="Telegram"></a>
+                <a href="#"><img src="./logo/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./logo/youtube.png" alt="YouTube"></a>
+            </div>
+            <div class="store-icons">
+                <a href="#"><img src="./images/apple.png" alt="Apple Store"></a>
+                <a href="#"><img src="./images/google-play.png" alt="Google Play Store"></a>
+            </div>
+            <p>© 2023 McDonald's. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
